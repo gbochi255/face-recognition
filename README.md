@@ -1,13 +1,14 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# face-recognition App
+A full-stack web application that enables users to register, sign in and submit images for face detection. It is built with a React frontend and a Node.Js/Express backend, with PostgreSql as the database (hosted on supabase). The app integrates the Clarifai API to detect faces in submitting image URLs and highlights them in the UI. We also designed and implemented RESTful API to access seeded application data programmatically with documented endpoints for user authentication, profile management and image analysis. Features include User Authentication, Face detection, RESTful API, seeded Data, Error Handling, Deployment ready and modern frontend
+Tech Stack - 
+Frontend: React(JavaScript, jSX), using axios for API requests.
+Backend: Node.js, Express, ( with CORS enabled with custom error-handling middleware)
+Database: PostgreSqL(managed via supabase)
+Face detection API: Clarifai
+Hosting: render (express API) and Netlify(React Frontend).
 
-Currently, two official plugins are available:
+Getting Started
+Pre-requisite: Ensure That Node.js and npm are installed on your system and that you have access to a postgreSQl database . Setup environment variable: create a .env file in the backend directory with the clarifai environment setup with your own keys
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# face-recognition
+Install frontend and backend dependencies using npm
